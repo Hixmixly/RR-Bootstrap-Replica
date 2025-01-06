@@ -3,12 +3,27 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
+import logo from '../images/instacart-logo.png';
 
 function TopBar() {
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand style={{ margin: "5px 0 0 20px" }} href="#home">
-                <img src="[Instacart logo src]" alt="Instacart Logo" />
+        <Navbar 
+        bg="light" 
+        expand="lg"
+        style={{
+            backgroundColor: 'FFFFFF'
+        }}
+        >
+            <Navbar.Brand style={{ 
+                margin: "5px 0 0 20px" 
+            }} 
+                href="#home">
+                <img src={logo} 
+                alt="Instacart Logo" 
+                style={{ 
+                    height: '100px',
+                    width: '100px' 
+                    }} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
