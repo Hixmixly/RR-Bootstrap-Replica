@@ -1,27 +1,58 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import albertsonsLogo from '../images/albersonsLogo.jpg';
+import smithsLogo from '../images/smithsLogo.jpg'; 
+import targetLogo from '../images/targetLogo.png'; 
 
 function StoreListings() {
   return (
-    <Container className="g-3">
-      <Row>
-        <Col xs>First, but unordered</Col>
-        <Col xs={{ order: 5 }}>Smiths</Col>
-        <Col xs={{ order: 0 }}>Albertsons</Col>
+    <Container>
+      <Row className="mb-3 align-items-center">
+        <Col xs>
+          <img src={albertsonsLogo} alt="albertsons" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
+        <Col xs={{ order: 5 }}>
+          <img src={smithsLogo} alt="smiths" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
+        <Col xs={{ order: 0 }}>
+          <img src={targetLogo} alt="target" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
       </Row>
-      <Row>
-        <Col xs>First, but unordered</Col>
-        <Col xs={{ order: 5 }}>Target</Col>
-        <Col xs={{ order: 0 }}>Sprouts</Col>
+      <Row className="mb-3 align-items-center">
+        <Col xs>
+          <img src={albertsonsLogo} alt="albertsons" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
+        <Col xs={{ order: 5 }}>
+          <img src={smithsLogo} alt="smiths" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
+        <Col xs={{ order: 0 }}>
+          <img src={targetLogo} alt="target" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
       </Row>
-      <Row>
-        <Col xs>First, but unordered</Col>
-        <Col xs={{ order: 5 }}>El Super</Col>
-        <Col xs={{ order: 0 }}>Marianas</Col>
+      <Row className="mb-3 align-items-center">
+        <Col xs>
+          <img src={albertsonsLogo} alt="albertsons" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
+        <Col xs={{ order: 5 }}>
+          <img src={smithsLogo} alt="smiths" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
+        <Col xs={{ order: 0 }}>
+          <img src={targetLogo} alt="target" style={{ height: '30px', marginRight: '10px' }} />
+          Delivery - Pickup
+        </Col>
       </Row>
     </Container>
   );
 }
 
-export default StoreListings
+export default StoreListings;
